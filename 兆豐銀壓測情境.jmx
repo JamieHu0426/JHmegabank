@@ -40,17 +40,17 @@
           </elementProp>
           <elementProp name="faq_url" elementType="Argument">
             <stringProp name="Argument.name">faq_url</stringProp>
-            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.value">10.2.109.24</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="faq_path" elementType="Argument">
             <stringProp name="Argument.name">faq_path</stringProp>
-            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.value">bot/faq/api/v1/query/10a92fb4-eee1-45c5-b145-31c7c1a35a9f</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="faq_port" elementType="Argument">
             <stringProp name="Argument.name">faq_port</stringProp>
-            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.value">30443</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -108,7 +108,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="token" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.value">i5Mlk8sMpRlyRWEqPR78A5c7FZaKH604</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">token</stringProp>
