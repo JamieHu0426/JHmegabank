@@ -1,0 +1,815 @@
+{
+	"info": {
+		"_postman_id": "9bebfffe-eaa2-441b-8d76-8f473c11aea7",
+		"name": "兆豐API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "昕力chatAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"chatwebId\": \"20210709163606157\",\r\n  \"channel\": \"NVoice\",\r\n  \"type\": \"customerMsg\",\r\n  \"message\": \"IVR啟動機器人流程\",\r\n  \"param\": {\r\n    \"traceTag\": \"NVoice\"\r\n  },\r\n  \"tel\": \"0912345678\",\r\n  \"sessionId\": \"123456789\",\r\n  \"domain\": \"\",\r\n  \"action\": \"#start\",\r\n  \"errorCode\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.51.11:30443/enterprise/flow/users/000000000000000000000000/apps/ec46e50896b678d4f790.afae3ca25689/api/?token=atqJ8OxI6bJ4FoCrY0&source=editor",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"51",
+						"11"
+					],
+					"port": "30443",
+					"path": [
+						"enterprise",
+						"flow",
+						"users",
+						"000000000000000000000000",
+						"apps",
+						"ec46e50896b678d4f790.afae3ca25689",
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "atqJ8OxI6bJ4FoCrY0"
+						},
+						{
+							"key": "source",
+							"value": "editor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"sessionId\":\"123456789\",\r\n         \"region\":\"T\"\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.51.2:8011/megaBank/ivr/getNumber",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"51",
+						"2"
+					],
+					"port": "8011",
+					"path": [
+						"megaBank",
+						"ivr",
+						"getNumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "return",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"sessionId\":\"123456789\",\r\n         \"region\":\"T\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.51.2:8011/megaBank/ivr/return",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"51",
+						"2"
+					],
+					"port": "8011",
+					"path": [
+						"megaBank",
+						"ivr",
+						"return"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "regionClear",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"region\":\"T\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.51.2:8011/megaBank/ivr/regionClear",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"51",
+						"2"
+					],
+					"port": "8011",
+					"path": [
+						"megaBank",
+						"ivr",
+						"regionClear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setAuthCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"sessionId\":\"a123456\",\r\n         \"authCode\":\"sjdfijewfwe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.51.1:3000/api/setAuthCode",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"51",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"setAuthCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/IvrAsrWeb/chat.ashx?",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "975269c6-5005-4a10-811c-3efb8b425eb9",
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chatwebId",
+							"value": "20210709163606157",
+							"type": "text"
+						},
+						{
+							"key": "channel",
+							"value": "NVoice",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "customerMsg",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "IVR啟動機器人流程",
+							"type": "text"
+						},
+						{
+							"key": "traceTag",
+							"value": "NVoice",
+							"type": "text"
+						},
+						{
+							"key": "tel",
+							"value": "0912345678",
+							"type": "text"
+						},
+						{
+							"key": "sessionId",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "domain",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "#start",
+							"type": "text"
+						},
+						{
+							"key": "errorCode",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "IVRTimeout",
+							"value": "8",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/IvrAsrWeb/chat.ashx",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"IvrAsrWeb",
+						"chat.ashx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C00022",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<BankSvcRq>\n\t<SEQNO>20211124152701_000001</SEQNO>\n\t<MSGID>C00022</MSGID>\n\t<CUSTID>S101577711</CUSTID>\n\t<CARD_NO>0</CARD_NO>\n\t<PURCHASE_SDATE>20210824</PURCHASE_SDATE>\n\t<PURCHASE_EDATE>20211124</PURCHASE_EDATE>\n\t<BILL_FLAG>1</BILL_FLAG>\n</BankSvcRq>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9093/Web2CreditGateway/EcsQuery",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9093",
+					"path": [
+						"Web2CreditGateway",
+						"EcsQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C00025",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<BankSvcRq>\n\t<SEQNO>20200422104445_4945603</SEQNO>\n\t<MSGID>C00025</MSGID>\n\t<FUNC>A</FUNC>\n\t<MERCHANT_NO>0025800030</MERCHANT_NO>\n\t<REFERENCE_NO>2158075821</REFERENCE_NO>\n\t<CASH_PAY_AMT>3630</CASH_PAY_AMT>\n\t<PERIOD>9</PERIOD>\n\t<RATE>9.88</RATE>\n\t<AGREE_VERSION></AGREE_VERSION>\n\t<AGREE_DATE></AGREE_DATE>\n</BankSvcRq>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9093/Web2CreditGateway/EcsQuery",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9093",
+					"path": [
+						"Web2CreditGateway",
+						"EcsQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C00035",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<BankSvcRq>\n\t<SEQNO>20211224152701_000001</SEQNO>\n\t<MSGID>C00035</MSGID>\n\t<CUSTID>S101577711</CUSTID>\n</BankSvcRq>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9093/Web2CreditGateway/EcsQuery",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9093",
+					"path": [
+						"Web2CreditGateway",
+						"EcsQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C00009",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<BankSvcRq>\n\t<SEQNO>20211124000000_000004</SEQNO>\n\t<MSGID>C00009</MSGID>\n\t<CUSTID>H124328423</CUSTID>\n</BankSvcRq>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9093/Web2CreditGateway/EcsQuery",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9093",
+					"path": [
+						"Web2CreditGateway",
+						"EcsQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C00022 local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A00003",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<BankSvcRq>\n\t<SEQNO>20211124152701_000001</SEQNO>\n\t<MSGID>A00003</MSGID>\n\t<CUSTID>S101577711</CUSTID>\n</BankSvcRq>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9093/Web2CreditGateway/EcsQuery",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9093",
+					"path": [
+						"Web2CreditGateway",
+						"EcsQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setCreditAdjust",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DAREQ>\n\t<DATA>\n\t\t<SOURCE>04</SOURCE>\n\t\t<CUSTID>F1271165558</CUSTID>\n\t\t<BIRTHDAY>19880406</BIRTHDAY>\n\t\t<APPLYTYPE>01</APPLYTYPE>\n\t\t<ADJUSTSTART>20210624</ADJUSTSTART>\n\t\t<ADJUSTEND>20211031</ADJUSTEND>\n\t\t<INFOVIA>02</INFOVIA>\n\t\t<INFOVIAFILED01></INFOVIAFILED01>\n\t\t<CREDITAMT>50</CREDITAMT>\n\t\t<APPLYREASION>01</APPLYREASION>\n\t\t<APPLYFIELD01></APPLYFIELD01>\n\t\t<APPLYFIELD02></APPLYFIELD02>\n\t\t<APPLYFIELD03></APPLYFIELD03>\n\t\t<APPLYFIELD04></APPLYFIELD04>\n\t\t<TRXTIME>20210630</TRXTIME>\n\t</DATA>\n</DAREQ>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:6050/SetCreditAdjust.do",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "6050",
+					"path": [
+						"SetCreditAdjust.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryAcct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DAREQ>\n\t<DATA>\n\t\t<SOURCE>04</SOURCE>\n\t\t<CUSTID>F1271165558</CUSTID>\n\t\t<BIRTHDAY>19880406</BIRTHDAY>\n\t\t<ACCTTYPE>01</ACCTTYPE>\n\t</DATA>\n</DAREQ>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9092/QueryAcct.do",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9092",
+					"path": [
+						"QueryAcct.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkotp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DAREQ>\n\t<DATA>\n\t\t<SOURCE>01</SOURCE>\n\t\t<CUSTID>S101577711</CUSTID>\n\t\t<BIRTHDAY>19480904</BIRTHDAY>\n\t\t<SEQNO>PJHE</SEQNO>\n\t\t<OTP_CODE>000000</OTP_CODE>\n\t</DATA>\n</DAREQ>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9092/CheckOtp.do",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9092",
+					"path": [
+						"CheckOtp.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendOtp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DAREQ>\n\t<DATA>\n\t\t<SOURCE>01</SOURCE>\n\t\t<CUSTID>S101577711</CUSTID>\n\t\t<BIRTHDAY>19480904</BIRTHDAY>\n\t</DATA>\n</DAREQ>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9092/SendOtp.do",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9092",
+					"path": [
+						"SendOtp.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryInstSign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DAREQ>\n\t<DATA>\n\t\t<SOURCE>01</SOURCE>\n\t\t<CUSTID>S101577711</CUSTID>\n\t\t<BIRTHDAY>19480904</BIRTHDAY>\n\t</DATA>\n</DAREQ>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9092/QueryInstSign.do",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9092",
+					"path": [
+						"QueryInstSign.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryPay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DAREQ>\n\t<DATA>\n\t\t<SOURCE>01</SOURCE>\n\t\t<CUSTID>S101577711</CUSTID>\n\t\t<BIRTHDAY>19480904</BIRTHDAY>\n\t</DATA>\n</DAREQ>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.53.4:9092/QueryPay.do",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"53",
+						"4"
+					],
+					"port": "9092",
+					"path": [
+						"QueryPay.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "補寄帳單",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cust_id\":\"F127477958\",\n\t\"project_category_code\":\"ic001\",\n\t\"bill_month\":\"2021/08\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.51.24/ai/send_reissue.ashx",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"51",
+						"24"
+					],
+					"path": [
+						"ai",
+						"send_reissue.ashx"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
