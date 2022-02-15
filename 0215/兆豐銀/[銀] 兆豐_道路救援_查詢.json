@@ -1,0 +1,959 @@
+{
+    "systalk_nlu_version": "1.0",
+    "name": "[銀] 兆豐_道路救援_查詢",
+    "language": "zh-tw",
+    "intents": [
+        {
+            "name": "道路救援使用次數",
+            "is_builtin": false,
+            "is_enabled": true
+        },
+        {
+            "name": "道路救援資格",
+            "is_builtin": false,
+            "is_enabled": true
+        }
+    ],
+    "entities": [
+        {
+            "name": "sys.世界國家城市",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ff88c2"
+        },
+        {
+            "name": "sys.中文姓氏",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#9d9dcd"
+        },
+        {
+            "name": "sys.人名",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#33ccff"
+        },
+        {
+            "name": "sys.台灣行政區",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#97fc82"
+        },
+        {
+            "name": "sys.地址",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#33ffaa"
+        },
+        {
+            "name": "sys.幣別&金額",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffd306"
+        },
+        {
+            "name": "sys.幣別名稱",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffd306"
+        },
+        {
+            "name": "sys.手機號碼",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffff33"
+        },
+        {
+            "name": "sys.數字",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#cba6c3"
+        },
+        {
+            "name": "sys.時間",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffab19"
+        },
+        {
+            "name": "sys.時間期間",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#edaa7e"
+        },
+        {
+            "name": "sys.機構",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#e38eff"
+        },
+        {
+            "name": "sys.身分證字號",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#eca1ca"
+        },
+        {
+            "name": "sys.金額",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffdd55"
+        },
+        {
+            "name": "sys.電子郵件",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#77fefe"
+        },
+        {
+            "name": "sys.順序指代",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffb3ff"
+        },
+        {
+            "name": "sys.顏色",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ff8e8f"
+        }
+    ],
+    "utterances": [
+        {
+            "sentence": "查 詢 道 路 救 援 權 益 使 用 次 數",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 權 益 使 用 次 數 查 詢",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 道 路 救 援 優 惠 使 用 次 數 查 詢",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 信 用 卡 道 路 救 援 優 惠 使 用 次 數",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "還 有 多 少 道 路 救 援 使 用 次 數",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 次 數",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "已 經 用 了 幾 次 道 路 救 援",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 道 路 救 援",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 查 詢",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 道 路 救 援 資 格",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 資 格 查 詢",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "有 免 費 的 拖 吊 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 有 沒 有 免 費 的 道 路 救 援",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 適 用 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 信 用 卡 有 送 拖 吊 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "辦 卡 會 送 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 有 送 的 拖 吊 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "是 不 是 會 送 我 道 路 救 援",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "辦 的 信 用 卡 送 拖 吊 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 會 送 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "包 含 道 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 拖 吊 有 幾 公 里",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 道 路 救 援 有 什 麼",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 道 路 救 援 規 定 是 在 幾 公 里",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 要 查 詢 道 路 救 援 資 格",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 道 路 救 援 內 容 是 什 麼",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 道 援 資 格",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 有 資 格 使 用 道 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 要 確 認 是 否 有 免 費 拖 吊 服 務",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 了 解 關 於 道 路 救 援",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 提 供 哪 些 服 務",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "可 以 讓 我 知 道 有 沒 有 道 路 救 援 資 格 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 有 哪 些 服 務 項 目",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 服 務 說 明",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "有 免 費 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "有 提 供 道 路 救 援 的 是 哪 幾 張 信 用 卡",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "你 們 雙 幣 卡 可 以 提 供 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 有 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 是 JCB 信 用 卡 ， 可 以 使 用 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 是 Mastercrad ， 可 以 使 用 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 是 VISA 卡 ， 可 以 使 用 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 信 用 卡 可 以 申 請 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "每 一 張 信 用 卡 都 有 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "金 卡 有 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 道 路 救 援 服 務 次 數 限 制",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "普 卡 有 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 有 使 用 次 數 限 制 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 免 費 次 數 是 幾 次",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 拖 吊 有 免 費 次 數 限 制 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "聯 名 卡 有 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "卡 片 都 沒 有 在 使 用 ， 還 會 提 供 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "你 們 雙 幣 卡 可 以 提 供 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 目 前 所 持 有 的 信 用 卡 可 以 申 請 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 有 消 費 為 甚 麼 不 能 使 用 道 路 救 援",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 有 汽 車 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 是 JCB 信 用 卡 ， 可 以 使 用 汽 車 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 是 Mastercrad ， 可 以 使 用 汽 車 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 卡 片 是 VISA 卡 ， 可 以 使 用 汽 車 道 路 救 援 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 信 用 卡 可 以 申 請 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 都 沒 有 用 你 們 家 信 用 卡 消 費 ， 這 樣 可 以 使 用 拖 吊 服 務 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "金 卡 有 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 道 路 救 援 使 用 資 格",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "普 卡 有 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "聯 名 卡 有 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "叫 第 二 次 汽 車 道 路 救 援 是 不 是 就 要 被 收 錢 了",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "同 一 天 拋 錨 2 次 都 可 以 免 費 使 用 汽 車 道 路 救 援 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 可 以 使 用 幾 次 汽 車 道 路 救 援 服 務",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 拖 吊 次 數 有 超 過 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 昨 天 使 用 過 汽 車 道 路 救 援 服 務 ， 今 天 還 可 以 使 用 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 昨 天 使 用 過 汽 車 道 路 救 援 服 務 ， 這 個 月 還 可 以 使 用 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 連 續 兩 天 叫 汽 車 道 路 救 援 會 被 收 錢 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 查 汽 車 道 路 救 援 次 數 查 詢",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 查 詢 汽 車 道 路 救 援 拖 吊 次 數",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 問 免 費 拖 吊 次 數 查 詢",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "沒 有 刷 卡 可 以 使 用 道 路 救 援 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "汽 車 道 路 救 援 有 使 用 次 數 限 制 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "汽 車 道 路 救 援 免 費 次 數 是 幾 次",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "汽 車 道 路 救 援 拖 吊 有 免 費 次 數 限 制 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "汽 車 道 路 救 援 的 免 費 次 數 是 怎 麼 計 算 的",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "汽 車 拖 吊 次 數 限 制",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 汽 車 汽 車 道 路 救 援 次 數 限 制",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 汽 車 道 路 救 援 次 數 限 制",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 汽 車 道 路 救 援 服 務 次 數 限 制",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 都 沒 刷 卡 的 話 還 有 免 費 道 路 救 援 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "消 費 未 達 門 檻 可 以 使 用 免 費 拖 吊 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "消 費 未 達 門 坎 可 以 使 用 免 費 拖 吊 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "叫 第 二 次 道 路 救 援 是 不 是 就 要 被 收 錢 了",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 連 續 兩 天 叫 道 路 救 援 會 被 收 錢 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 可 以 使 用 幾 次 道 路 救 援 服 務",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 查 詢 道 路 救 援 拖 吊 次 數",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 昨 天 使 用 過 道 路 救 援 服 務 ， 今 天 還 可 以 使 用 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 查 道 路 救 援 次 數 查 詢",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "信 用 卡 道 路 救 援 次 數 限 制",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 昨 天 使 用 過 道 路 救 援 服 務 ， 這 個 月 還 可 以 使 用 嗎",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 還 有 幾 次 拖 吊",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 還 有 幾 次 道 路 救 援",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "拖 吊 剩 餘 幾 次",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 的 道 路 救 援 還 有 免 費 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "道 路 救 援 還 剩 多 少 次",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "用 多 少 次 道 路 救 援 了",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 還 可 以 用 道 路 救 援 嗎",
+            "intent": "道路救援資格",
+            "intent_prediction": "道路救援資格",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 還 剩 幾 次 的 道 路 救 援 額 度",
+            "intent": "道路救援使用次數",
+            "intent_prediction": "道路救援使用次數",
+            "annotations": [],
+            "annotations_prediction": []
+        }
+    ],
+    "synonyms": [],
+    "algo_type": "SYSTALK",
+    "bert_version": "0.0.1"
+}
