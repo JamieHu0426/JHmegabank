@@ -1,0 +1,2633 @@
+{
+    "systalk_nlu_version": "1.0",
+    "name": "[銀] 兆豐_銀行_查詢",
+    "language": "zh-tw",
+    "intents": [
+        {
+            "name": "匯率",
+            "is_builtin": false,
+            "is_enabled": true
+        },
+        {
+            "name": "存款利率",
+            "is_builtin": false,
+            "is_enabled": true
+        },
+        {
+            "name": "手續費優惠次數",
+            "is_builtin": false,
+            "is_enabled": true
+        },
+        {
+            "name": "黃金存摺",
+            "is_builtin": false,
+            "is_enabled": true
+        }
+    ],
+    "entities": [
+        {
+            "name": "sys.世界國家城市",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ff88c2"
+        },
+        {
+            "name": "sys.中文姓氏",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#9d9dcd"
+        },
+        {
+            "name": "sys.人名",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#33ccff"
+        },
+        {
+            "name": "sys.台灣行政區",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#97fc82"
+        },
+        {
+            "name": "sys.地址",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#33ffaa"
+        },
+        {
+            "name": "sys.幣別&金額",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffd306"
+        },
+        {
+            "name": "sys.幣別名稱",
+            "is_builtin": true,
+            "is_enabled": true,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffd306"
+        },
+        {
+            "name": "sys.手機號碼",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffff33"
+        },
+        {
+            "name": "sys.數字",
+            "is_builtin": true,
+            "is_enabled": true,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#cba6c3"
+        },
+        {
+            "name": "sys.時間",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffab19"
+        },
+        {
+            "name": "sys.時間期間",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#edaa7e"
+        },
+        {
+            "name": "sys.機構",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#e38eff"
+        },
+        {
+            "name": "sys.身分證字號",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#eca1ca"
+        },
+        {
+            "name": "sys.金額",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffdd55"
+        },
+        {
+            "name": "sys.電子郵件",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#77fefe"
+        },
+        {
+            "name": "sys.順序指代",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ffb3ff"
+        },
+        {
+            "name": "sys.顏色",
+            "is_builtin": true,
+            "is_enabled": false,
+            "phrases": "",
+            "swappable": true,
+            "force_match": false,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#ff8e8f"
+        },
+        {
+            "name": "利率類型",
+            "is_builtin": false,
+            "is_enabled": true,
+            "phrases": "固定,定存,定期\n機動,活存,活期",
+            "swappable": true,
+            "force_match": true,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#80d4f6"
+        },
+        {
+            "name": "匯率服務判斷",
+            "is_builtin": false,
+            "is_enabled": true,
+            "phrases": "換,換算,兌,兌換,試算",
+            "swappable": true,
+            "force_match": true,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#6a60a9"
+        },
+        {
+            "name": "存款類型",
+            "is_builtin": false,
+            "is_enabled": true,
+            "phrases": "台幣存款,臺幣存款,台幣活存,台幣定存,臺幣活存,臺幣定存\n外幣存款,外幣活存,外幣定存",
+            "swappable": true,
+            "force_match": true,
+            "case_sensitive": false,
+            "regexes": "",
+            "regex_case_sensitive": false,
+            "regex_force_match": false,
+            "color": "#6a60a9"
+        }
+    ],
+    "utterances": [
+        {
+            "sentence": "查 詢 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "存 款 利 率 查 詢",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "台 幣 存 款 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "外 幣 存 款 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "查 詢 活 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "查 詢 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 存 款 利 率 怎 麼 算",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "外 幣 存 款 利 率 怎 麼 算",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 的 # 期 存 款 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 黃 金 存 摺",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 摺 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "買 了 多 少 黃 金",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "賣 了 多 少 黃 金",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 黃 金 買 賣 記 錄",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 買 賣 記 錄 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 我 的 黃 金 存 摺",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 目 前 有 多 少 黃 金",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "想 看 我 的 黃 金 總 額",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 黃 金 交 易 記 錄",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "匯 率 查 詢",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# # 匯 率 多 少",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# # 台 幣 可 以 換 多 少 # #",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "sys.幣別名稱"
+                },
+                {
+                    "text": "換",
+                    "start": 6,
+                    "end": 7,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "1 # # 是 多 少 台 幣",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "1",
+                    "start": 0,
+                    "end": 1,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "台 幣",
+                    "start": 6,
+                    "end": 8,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 兌 # # 匯 率 多 少",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                },
+                {
+                    "text": "兌",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 兌 # # 的 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兌",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "試 算 # # 換 # #",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "試 算",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "匯率服務判斷"
+                },
+                {
+                    "text": "換",
+                    "start": 4,
+                    "end": 5,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "想 換 # # 要 準 備 多 少 台 幣",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "換",
+                    "start": 1,
+                    "end": 2,
+                    "entity": "匯率服務判斷"
+                },
+                {
+                    "text": "台 幣",
+                    "start": 9,
+                    "end": 11,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "匯 率 試 算",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "試 算",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "查 詢 手 續 費 優 惠 次 數",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "手 續 費 優 惠 次 數 查 詢",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "還 剩 幾 次 提 款 免 手 續 費",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "還 剩 幾 次 轉 帳 免 手 續 費",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "已 經 轉 帳 幾 次 了",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "已 經 提 款 幾 次 了",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "有 幾 次 免 手 續 費 優 惠",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "免 收 手 續 費 次 數 還 有 幾 次",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "跨 行 提 款 還 有 手 續 費 優 惠 嗎",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "跨 行 轉 帳 還 可 以 免 收 手 續 費 嗎",
+            "intent": "手續費優惠次數",
+            "intent_prediction": "手續費優惠次數",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "台 幣 存 款 利 率 查 詢 方 式",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "3 年 的 定 存 跟 1 年 的 利 息 差 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "3",
+                    "start": 0,
+                    "end": 1,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 存",
+                    "start": 3,
+                    "end": 5,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "1",
+                    "start": 6,
+                    "end": 7,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "app 可 以 查 存 款 的 利 率 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "可 以 給 我 不 同 時 間 定 存 的 利 率 表 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 8,
+                    "end": 10,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 利 率 是 會 變 動 的 嗎 那 現 在 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 定 存 # 年 期 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 定 存",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 定 存",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 定 存 利 率 會 公 告 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 定 存",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 現 在 的 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 儲 蓄 利 率 的 查 詢 方 法",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "有 什 麼 比 較 方 便 的 查 利 率 方 法",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "有 那 些 管 道 可 以 查 到 你 們 銀 行 的 台 幣 利 率 現 在 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 14,
+                    "end": 16,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "你 知 道 現 在 活 存 的 利 息 是 幾 % 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 可 以 怎 麼 看 到 我 的 台 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 9,
+                    "end": 13,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 找 不 到 台 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 找 不 到 台 幣 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 定 存",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 的 帳 戶 是 vbanking 的 現 在 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 瞭 解 台 幣 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 定 存",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 想 存 半 年 台 幣 定 存 ， 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 定 存",
+                    "start": 5,
+                    "end": 9,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 想 看 現 在 台 幣 存 款 的 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 5,
+                    "end": 9,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "怎 麼 查 台 幣 的 活 儲 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 3,
+                    "end": 5,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "查 活 存 利 率 只 能 去 銀 行 查 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 1,
+                    "end": 3,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "活 期 儲 蓄 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 期",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "哪 裡 可 以 查 到 台 幣 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 6,
+                    "end": 8,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 定 存 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 活 存 的 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "想 查 詢 我 的 定 存 儲 蓄 利 率 。",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "想 問 一 下 貴 銀 行 台 幣 零 存 整 付 一 年 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "台 幣",
+                    "start": 7,
+                    "end": 9,
+                    "entity": "sys.幣別名稱"
+                },
+                {
+                    "text": "零",
+                    "start": 9,
+                    "end": 10,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "一",
+                    "start": 13,
+                    "end": 14,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "請 幫 我 查 台 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "要 怎 麼 查 詢 目 前 的 台 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣 存 款",
+                    "start": 8,
+                    "end": 12,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "定 存 利 率 查 詢 方 式",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "可 以 知 道 定 存 利 率 多 少 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 4,
+                    "end": 6,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "在 網 頁 上 可 以 查 到 兆 豐 銀 行 的 定 期 存 款 利 率 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兆",
+                    "start": 8,
+                    "end": 9,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 期",
+                    "start": 13,
+                    "end": 15,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 要 開 台 幣 定 期 存 款 , 目 前 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 3,
+                    "end": 5,
+                    "entity": "sys.幣別名稱"
+                },
+                {
+                    "text": "定 期",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 現 在 要 開 立 # 幣 定 期 存 款 , 哪 一 種 利 率 最 優 惠",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 期",
+                    "start": 8,
+                    "end": 10,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "一",
+                    "start": 14,
+                    "end": 15,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "我 想 要 查 定 存 的 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 4,
+                    "end": 6,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 想 要 查 定 存 現 圶 的 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 4,
+                    "end": 6,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "定 存 利 率 在 哪 裡 看",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "定 存 利 率 查 詢",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "定 存 利 率 會 寫 在 哪 裡",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "怎 麼 查 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 3,
+                    "end": 5,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "活 期 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 期",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "要 查 看 兆 豐 銀 行 的 # 幣 定 期 存 款 利 率 要 怎 麼 查 詢",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兆",
+                    "start": 3,
+                    "end": 4,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 期",
+                    "start": 10,
+                    "end": 12,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "哪 裡 可 以 查 到 現 在 的 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 9,
+                    "end": 11,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "兆 豐 銀 行 的 定 期 存 款 利 率 有 分 哪 幾 種 , 幾 年 期 的",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兆",
+                    "start": 0,
+                    "end": 1,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 期",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "查 詢 定 存 的 利 率 有 什 麼 方 法",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "外 幣 存 款 利 率 查 詢 方 式",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 幣 定 期 存 款 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 期",
+                    "start": 3,
+                    "end": 5,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "手 機 可 以 查 外 幣 的 儲 蓄 利 率 嘛",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# 幣 活 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "外 幣 定 存 是 以 台 幣 計 算 利 率 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 定 存",
+                    "start": 0,
+                    "end": 4,
+                    "entity": "存款類型"
+                },
+                {
+                    "text": "台 幣",
+                    "start": 6,
+                    "end": 8,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "外 幣 的 利 率 在 哪 裡 能 看 到",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 幣 活 期 的 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 期",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "外 幣 儲 蓄 利 率 的 查 詢 方 法",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 有 # 幣 定 存 ， 我 想 問 一 下 # 幣 定 存 是 不 是 沒 有 利 息",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 4,
+                    "end": 6,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "一",
+                    "start": 10,
+                    "end": 11,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 存",
+                    "start": 14,
+                    "end": 16,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "有 沒 有 # # 定 存 的 利 率 資 料",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "網 路 上 看 的 到 外 幣 的 存 款 利 率 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# # 存 款 的 利 率 漂 亮 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# # 存 款 利 率 如 何",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "你 們 家 的 外 幣 存 款 利 率 查 詢 管 道 有 哪 些",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "銀 行 # # 存 款 利 率 如 何",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 可 以 從 哪 看 到 # # 的 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 找 不 到 外 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 找 不 到 外 幣 定 存 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 定 存",
+                    "start": 4,
+                    "end": 8,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 想 外 弊 存 款 利 率 的 方 案 。",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 想 存 半 年 外 幣 定 存 ， 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 定 存",
+                    "start": 5,
+                    "end": 9,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "我 想 問 # # 定 存 ， 定 存 一 周 存 12 個 月 與 定 存 一 年 的 利 息 怎 麼 算",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "定 存",
+                    "start": 8,
+                    "end": 10,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "一",
+                    "start": 10,
+                    "end": 11,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "12",
+                    "start": 13,
+                    "end": 14,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 存",
+                    "start": 17,
+                    "end": 19,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "一",
+                    "start": 19,
+                    "end": 20,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "定 存 一 年 # # ， 利 率 怎 麼 看",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "一",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "怎 麼 查 外 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 3,
+                    "end": 7,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "怎 麼 看 我 的 外 幣 帳 戶 目 前 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# # 活 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 活 存 利 率 多 少 是 今 天 才 調 嗎 沒 有 固 定",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "固 定",
+                    "start": 16,
+                    "end": 18,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 一 年 期 定 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "活 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "要 怎 麼 查 你 們 外 幣 的 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "哪 裡 可 以 查 外 幣 的 利 率 呢",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "哪 些 管 道 能 查 到 外 幣 的 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "一 年 期 # # 定 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 0,
+                    "end": 1,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 外 幣 利 息 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "現 在 存 外 幣 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "現 在 外 幣 定 存 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 定 存",
+                    "start": 2,
+                    "end": 6,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 存 外 幣 有 比 台 幣 好 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 7,
+                    "end": 9,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 存 外 幣 的 利 息 高 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "現 在 存 # # 的 利 息 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "現 在 存 # # 利 率 好 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "現 在 # # 的 存 放 利 率 是 幾 趴 啊",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "現 在 買 外 幣 存 起 來 的 利 率 是 如 何",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "一 年 期 定 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 0,
+                    "end": 1,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 存",
+                    "start": 3,
+                    "end": 5,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "活 存 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "看 的 到 外 幣 的 存 款 利 率 嗎",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "定 存 一 年 期 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                },
+                {
+                    "text": "一",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "那 種 幣 別 的 定 存 利 率 較 高",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 5,
+                    "end": 7,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "定 存 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "定 存",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "現 在 # # 存 一 年 定 期 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 5,
+                    "end": 6,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "定 期",
+                    "start": 7,
+                    "end": 9,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 優 惠 一 年 息 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 4,
+                    "end": 5,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 一 年 利 息 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 活 期 存 款 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "活 期",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "利率類型"
+                }
+            ]
+        },
+        {
+            "sentence": "幫 我 查 一 下 # # 一 個 月 跟 三 個 月 的 利 率 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "一",
+                    "start": 3,
+                    "end": 4,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "一",
+                    "start": 7,
+                    "end": 8,
+                    "entity": "sys.數字"
+                },
+                {
+                    "text": "三",
+                    "start": 11,
+                    "end": 12,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "# # — 年 利 息 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "哪 裡 可 以 查 詢 你 們 的 外 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 9,
+                    "end": 13,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "想 知 道 你 們 的 外 幣 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 6,
+                    "end": 10,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "目 前 的 外 幣 存 款 利 率 是 多 少",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "外 幣 存 款",
+                    "start": 3,
+                    "end": 7,
+                    "entity": "存款類型"
+                }
+            ]
+        },
+        {
+            "sentence": "如 何 查 詢 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "存 款 利 率 查 詢 方 式",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "咨 詢 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "問 存 款 利 率",
+            "intent": "存款利率",
+            "intent_prediction": "存款利率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 摺",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "以 黃 金 存 摺 買 黃 金 黃 金 價 格 ?",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "台 幣 黃 金 存 摺",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "查 詢 黃 金 存 摺 即 時 價 格",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "查 詢 黃 金 存 摺 歷 史 價 格",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "如 何 查 詢 黃 金 匯 率",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "如 何 查 詢 黃 金 存 折 歷 史 價 格",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "怎 麼 查 詢 黃 金 存 摺 即 時 價 格",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "怎 麼 查 詢 黃 金 存 摺 歷 史 價 格",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "美 金 黃 金 存 摺",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "美 金",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "黃 金 存 摺 即 時 ／ 歷 史 價 格 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 摺 即 時 價 格 如 何 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 摺 即 時 價 格 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 摺 歷 史 價 格 如 何 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 摺 歷 史 價 格 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "臺 幣 黃 金 存 摺",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "臺 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "黃 金 存 折 歷 史 價 格 如 何 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 折 歷 史 價 格 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 折 實 時 ／ 歷 史 價 格 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 折 實 時 價 格 如 何 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "黃 金 存 折 實 時 價 格 查 詢",
+            "intent": "黃金存摺",
+            "intent_prediction": "黃金存摺",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 匯 匯 率 表",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "今 天 的 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 匯 有 哪 些 幣 別",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 幣 ATM 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "本 日 匯 價",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "網 站 上 哪 裡 有 匯 率 可 以 看",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "兌 換 台 幣",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兌 換",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "匯率服務判斷"
+                },
+                {
+                    "text": "台 幣",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "要 查 看 兆 豐 銀 行 的 匯 率 要 怎 麼 查 詢",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兆",
+                    "start": 3,
+                    "end": 4,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "哪 裡 可 以 看 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 匯 買 匯",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 匯 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "匯 率 多 少",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "匯 率 怎 麼 看",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "匯 率 看 版 在 哪 裡",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "兆 豐 銀 行 外 幣 匯 率 裡 面 有 哪 幾 種 幣 別 的 匯 率 可 以 查 詢",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "兆",
+                    "start": 0,
+                    "end": 1,
+                    "entity": "sys.數字"
+                }
+            ]
+        },
+        {
+            "sentence": "如 何 查 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 匯 賣 匯",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "幫 我 查 詢 所 有 外 幣 的 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 幣 匯 率 查 詢",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 幣 滙 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "如 何 得 知 有 關 外 匯 的 匯 率",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "外 匯 匯 率 表 在 哪 裡 可 以 找 得 到 呢",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "今 天 台 幣 換 # 幣 的 匯 率 為 何",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "sys.幣別名稱"
+                },
+                {
+                    "text": "換",
+                    "start": 4,
+                    "end": 5,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "台 幣 買 進 賣 出 匯 率 查 詢",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "台 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "日 幣 今 日 匯 率 是 高 還 低",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "日 幣",
+                    "start": 0,
+                    "end": 2,
+                    "entity": "sys.幣別名稱"
+                }
+            ]
+        },
+        {
+            "sentence": "幫 我 查 今 天 的 外 幣 利 率 是 多 少",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "用 本 行 卡 片 到 本 行 atm 領 外 幣 的 匯 率 是 多 少 ， 要 手 續 費 嗎",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "我 要 查 外 幣 的 歷 史 匯 率 , 最 久 可 以 查 多 長 的 時 間",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": []
+        },
+        {
+            "sentence": "# 幣 換 #",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "換",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 換 # #",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "換",
+                    "start": 2,
+                    "end": 3,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        },
+        {
+            "sentence": "# # 換 算 # #",
+            "intent": "匯率",
+            "intent_prediction": "匯率",
+            "annotations": [],
+            "annotations_prediction": [
+                {
+                    "text": "換 算",
+                    "start": 2,
+                    "end": 4,
+                    "entity": "匯率服務判斷"
+                }
+            ]
+        }
+    ],
+    "synonyms": [
+        {
+            "name": "銀行查詢",
+            "number_of_lines": 6,
+            "case_sensitive": false,
+            "synonyms": "澳幣,奧幣\n美金,美元\n優惠,尤惠\n存摺,存折\n即時,實時\n如何,怎麼,怎樣"
+        }
+    ],
+    "algo_type": "SYSTALK",
+    "bert_version": "0.0.1"
+}
